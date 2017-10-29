@@ -367,9 +367,10 @@ public abstract class SocketClient
     /**
      * Make various checks on the socket to test if it is available for use.
      * Note that the only sure test is to use it, but these checks may help
-     * in some cases.
+     * in some cases.<br/>
+     * 在套接字上进行各种检查，以测试它是否可用。请注意，唯一确定的测试是使用它，但是这些检查在某些情况下可能有所帮助。
      * @see <a href="https://issues.apache.org/jira/browse/NET-350">NET-350</a>
-     * @return {@code true} if the socket appears to be available for use
+     * @return {@code true} if the socket appears to be available for use 如果该套接字显示可用，则为真
      * @since 3.0
      */
     public boolean isAvailable(){
