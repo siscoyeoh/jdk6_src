@@ -2698,17 +2698,20 @@ implements Configurable
     /**
      * Creates a new subdirectory on the FTP server in the current directory
      * (if a relative pathname is given) or where specified (if an absolute
-     * pathname is given).
+     * pathname is given).<br/>
+     * 在当前目录中的FTP服务器上创建一个新的子目录(如果给定一个相对路径名)或指定的位置(如果给定一个绝对路径名)。
      *
-     * @param pathname The pathname of the directory to create.
-     * @return True if successfully completed, false if not.
+     * @param pathname The pathname of the directory to create.路径名:创建目录的路径名。
+     * @return True if successfully completed, false if not.如果成功完成，则为真。
      * @exception FTPConnectionClosedException
      *      If the FTP server prematurely closes the connection as a result
      *      of the client being idle or some other reason causing the server
      *      to send FTP reply code 421.  This exception may be caught either
-     *      as an IOException or independently as itself.
+     *      as an IOException or independently as itself.<br/>
+     *      FTPConnectionClosedException——如果过早FTP服务器关闭连接的客户端被闲置或其他原因导致服务器发送FTP回复代码421。这个异常可以作为IOException捕获，也可以单独捕获。
      * @exception IOException  If an I/O error occurs while either sending a
-     *      command to the server or receiving a reply from the server.
+     *      command to the server or receiving a reply from the server. <br/>
+     *      如果发生I / O错误，则在向服务器发送命令或从服务器接收应答时发生错误。
      */
     public boolean makeDirectory(String pathname) throws IOException
     {
